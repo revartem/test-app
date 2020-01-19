@@ -5,7 +5,7 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import 'vue-material/dist/theme/default.css'
-import '../public/maincolors.sass';
+import './assets/maincolors.sass';
 import Vuex from 'vuex'
 
 Vue.use(Vuex);
@@ -14,7 +14,7 @@ import { store } from './store'
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyB9uAQn_LNiFjZ3TIUUmiqakL1VDCTbW5Q',
+    key: 'AIzaSyA4hncSOPzMycRh-e-nzybR0XP52-kZYWY',
   },
 })
 
