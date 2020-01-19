@@ -226,7 +226,7 @@
         computed: {
             isDisabled() {
                 // evaluate whatever you need to determine disabled here...
-                if(this.$v.email.required && this.$v.email.email && this.$v.phone.required && this.$v.phone.minLength && this.$v.name.required && this.$v.name.maxLength){
+                if(this.$v.email.required && this.$v.email.email && this.$v.phone.required && this.$v.phone.minLength && this.$v.name.required && this.$v.name.maxLength && this.$v.phone.mustBeCool){
                     return false;
                 }
                 else {
@@ -242,7 +242,7 @@
 
         methods: {
             postForm(){
-                axios.post('http://httpbin.org/post', this.$store.state.form)
+                axios.post('https://httpbin.org/post', this.$store.state.form)
                     .then(function (response) {
                         // eslint-disable-next-line no-console
                         console.log(response);
